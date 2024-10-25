@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bizli - Coming Soon</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #3498db, #8e44ad);
+            background-attachment: fixed;
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .container {
+            text-align: center;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            width: 90%;
+        }
+        .logo {
+            font-family: 'Inter', sans-serif;
+            font-size: 4.5em;
+            font-weight: 700;
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+            color: #fff;
+            letter-spacing: -2px;
+            transition: all 0.3s ease;
+        }
+        .logo i {
+            font-size: 0.7em;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        .logo::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 0;
+            height: 3px;
+            background: #fff;
+            transition: width 0.3s ease;
+        }
+        .logo:hover {
+            letter-spacing: 1px;
+        }
+        .logo:hover::after {
+            width: 100%;
+        }
+        .tagline {
+            font-size: 1.4em;
+            margin-bottom: 30px;
+            font-weight: 300;
+            max-width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .email {
+            font-size: 1.2em;
+            margin-top: 30px;
+            font-weight: 400;
+        }
+        .email a {
+            color: #f1c40f;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .email a:hover {
+            color: #fff;
+        }
+        @media (max-width: 600px) {
+            .logo { font-size: 3.5em; }
+            .tagline { font-size: 1.2em; }
+            .email { font-size: 1em; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            Bizli
+        </div>
+        <p class="tagline">Where Business Communication Makes Happy Customers</p>
+        <p>Be the first to know when we launch!</p>
+        <p class="email">Contact us: <a href="mailto:hello@bizli.guru">hello@bizli.guru</a></p>
+    </div>
+</body>
+</html>
